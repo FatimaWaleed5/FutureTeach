@@ -1,0 +1,206 @@
+/* الخط الافتراضي */
+* {
+    font-family: auto;
+}
+
+/* تصميم الروابط */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* تصميم الكروت */
+.twotypes {
+    display: flex;
+    align-items: center;
+    background-color: #2a3d71; /* لون خلفية الكارت */
+    padding: 0px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    overflow: hidden; /* للتأكد من أن التأثير لا يتجاوز حدود الكارت */
+}
+
+.twotypes.reverse {
+    flex-direction: row-reverse;
+}
+
+/* تصميم الصور */
+.typesimages {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: translateX(0); /* وضع الصورة في مكانها الطبيعي */
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease; /* تأثير انتقال بطيء للصورة */
+}
+
+/* تصميم النصوص داخل الكارت */
+.typestext-content {
+    flex-grow: 1;
+    padding-right: 10px;
+    padding-left: 20px;
+    transform: translateX(100%); /* مكان بداية النص خارج الكارت */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease; /* تأثير انتقال بطيء للنص */
+}
+
+/* تنسيق العناوين */
+h3 {
+    color: #f6f5f5bb;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* تنسيق النصوص */
+p {
+    margin-bottom: 15px;
+    color: #908d8d;
+}
+
+/* تصميم الزر */
+.viewbtn {
+    padding: 10px 20px;
+    background-color: #908d8d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+}
+
+.viewbtn:hover {
+    background-color: #000000;
+}
+
+/* تأثير حركة النص عند التمرير */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* تأثير حركة الصورة عند التمرير */
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* تطبيق التأثيرات عند التمرير على الكارت */
+.twotypes:hover .typestext-content {
+    animation: slideIn 1s forwards;
+}
+
+.twotypes:hover .typesimages {
+    animation: slideOut 1s forwards;
+}
+
+/* تصميم قسم الدورات */
+.undercourses {
+    margin-top: 200px;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #000000;
+    margin: 40px 0;
+    width: 70%;
+    align-self: center;
+}
+
+.Technicalcourses {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.FiberOptics {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: stretch; 
+    background-color: #E3E6DD;
+    margin-bottom: 30px;
+}
+
+.fiberinfo {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.fiberimg {
+    flex: 0 0 auto; 
+    max-width: 45%; 
+}
+
+.fiberimg img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.fibertitle {
+    color: black;
+    margin-top: 20px;
+}
+
+.fiberdis {
+    margin-left: 20px;
+}
+
+.fiberdeal {
+    display: flex;         
+    align-items: center;    
+    gap: 15px;
+}
+
+.fibertrainer,
+.fiberprice {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.fibertrainername,
+.fibertheprice,
+.fiberbuy {
+    background-color: #825D23;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fibertrainername,
+.fibertheprice {
+    width: fit-content;
+    display: block;
+    margin-top: 2px;
+}
+
+.fiberbuy {
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    margin-left: 60px;
+}
+
+.fiberbuy:hover {
+    background-color: #b5802d;
+}

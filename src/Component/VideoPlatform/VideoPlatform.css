@@ -1,0 +1,121 @@
+
+
+
+/* تنسيق محتوى الصفحة */
+.content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* القسم الرئيسي للفيديو */
+  .main-video-section {
+    flex: 3; /* زيادة حجم القسم الرئيسي */
+    margin-right: 20px;
+  }
+  
+  .main-video {
+    position: relative;
+    width: 50%;
+    height: 200px; /* تعيين ارتفاع أكبر للفيديو */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-video img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .video-details {
+    margin-top: 10px;
+  }
+  
+  .video-actions {
+    margin-top: 10px;
+  }
+  
+  .video-actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #2a3d71;
+    color: white;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  /* الشريط الجانبي للفيديوهات */
+  .video-sidebar {
+    flex: 1; /* تقليل حجم الشريط الجانبي */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5%;
+  }
+  
+  .sidebar-video {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #2a3d71;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+  }
+  
+  .sidebar-video img {
+    width: 80%; /* تقليل حجم الصور الجانبية */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .sidebar-video h3 {
+    margin: 10px 0;
+    font-size: 14px; /* تقليل حجم النص */
+    text-align: center;
+    color: white;
+  }
+  
+  .sidebar-video a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* تنسيق الفيديو الرئيسي */
+  .main-video {
+    position: relative;
+    width: 100%; /* اجعل العرض 100% */
+    height: 80vh; /* اجعل الارتفاع أكبر، على سبيل المثال 80% من ارتفاع نافذة العرض */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-iframe {
+    width: 100%; /* اجعل العرض 100% */
+    height: 100%; /* اجعل الارتفاع 100% */
+    border: none; /* إزالة الحدود */
+  }
+  
+  .logo {
+    width: -80%; /* تقليل حجم الصور الجانبية */
+    height: auto;
+  
+  }

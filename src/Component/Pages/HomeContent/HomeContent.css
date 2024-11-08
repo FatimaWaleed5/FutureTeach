@@ -1,0 +1,203 @@
+.empower-section1 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 350px;
+  padding: 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: center;
+  width: auto;
+  height: 300px;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.empower-section2 {
+  flex: 1;
+  padding-left: 0px;
+  width: 0px;
+  height: 8px;
+}
+
+.main-heading-style {
+  font: 400 32px Inder, sans-serif;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.empower-container {
+  background: #2a3d71;
+  padding: 30px;
+  border-radius: 50px;
+  color: white;
+  width: fit-content;
+}
+
+.empower-text-styler {
+  font: 400 24px Actor, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+
+.futuristic-academy-card {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-right: 4px;
+    padding-left: 54px;
+    background: #d9d9d9;
+    border-radius: 50px;
+  }
+  .academy-intro-section {
+    flex: 0 0 auto;
+    padding-top: 31.5px;
+  }
+  .futuristic-heading {
+    padding: 0;
+    margin: 0;
+    font: 600 54px/54px Inter, sans-serif;
+    color: black;
+    text-align: left;
+  }
+  .learning-journey-heading {
+    padding: 0;
+    margin: 0;
+    margin-top: 39px;
+    font: 400 20px/20px Actor, sans-serif;
+    color: black;
+  }
+  .course-list-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 41px;
+  }
+  .course-card {
+    box-sizing: border-box;
+    flex: 0 0 225px;
+  }
+  .hero-banner-text-input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 54px;
+    padding-left: 19px;
+    font: 400 24px/24px Actor, sans-serif;
+    color: white;
+    background: #51618b;
+    border: none;
+  }
+  .transparent-input-style {
+    box-sizing: border-box;
+    width: 100%;
+    font: 400 24px/24px Actor, sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .input-style-2a23c945::placeholder {
+    color: white;
+  }
+  .course-title-section {
+    box-sizing: border-box;
+    flex: 0 0 242px;
+    padding: 0;
+    margin: 0;
+    margin-left: 32px;
+    font: 400 24px/24px Actor, sans-serif;
+    color: white;
+    background: #51618b;
+  }
+  
+  .element-styles {
+    display: inline-block;
+    width: 1920px;
+}
+.partner-section-container1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: fit-content;
+    padding-top: 25px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background: #d9d9d9;
+    border-radius: 50px;
+}     
+.partner-section-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-width: 1289px;
+    padding-top: 34px;
+    padding-bottom: 32px;
+}
+.partner-heading-style {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    align-self: center;
+    width: 341px;
+    padding: 0;
+    margin: 0;
+    margin-left: -46px;
+    font: 400 32px/32px Inder, sans-serif;
+    color: black;
+    text-align: center;
+}
+.partner-logos-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 214px;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 27px;
+}
+.image-container-full-width {
+    box-sizing: border-box;
+    display: block;
+    width: 254px;
+    max-width: initial;
+    height: 120px;
+    border: none;
+    object-fit: cover;
+}
+.image-container-covered {
+    box-sizing: border-box;
+    display: block;
+    width: 307px;
+    max-width: initial;
+    height: 140px;
+    border: none;
+    object-fit: cover;
+}
+.image-container-cover {
+    box-sizing: border-box;
+    display: block;
+    width: 300px;
+    max-width: initial;
+    height: 220px;
+    border: none;
+    object-fit: cover;
+}

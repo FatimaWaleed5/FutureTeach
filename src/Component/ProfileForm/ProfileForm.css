@@ -1,0 +1,101 @@
+.profile-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100vw; /* عرض كامل الشاشة */
+  max-width: 1500px; /* ضبط الحد الأقصى للعرض */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2A3D71;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.profile-pic {
+  width: 200px; /* تحديد عرض ثابت لقسم الصورة */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.placehold {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 4em;
+  color: #2A3D71;
+  
+}
+
+.yourname {
+  color: white;
+}
+
+.form-fields {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px; /* تحديد عرض ثابت للنموذج */
+}
+
+.form-fields div {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  margin-left: 150px;
+}
+
+.form-fields input,
+.form-fields select,
+.form-fields textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%; /* جعل العرض الكامل */
+  box-sizing: border-box;
+  margin-left: 150px;
+}
+
+.subinfo {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #3e5fbb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 150px; /* جعل الزر يأخذ العرض الكامل */
+}
+
+.subinfo:hover {
+  background-color: #395298;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #f6f7f8;
+  font-weight: bold;
+}

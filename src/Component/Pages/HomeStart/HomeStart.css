@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.all {
+    box-sizing: border-box;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px 0px 50px;
+    background: #d9d9d9;
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.left {
+    flex: 0 0 50%;
+}
+
+.topic {
+    margin: 0;
+    font: 600 50px/54px Inter, sans-serif;
+    color: black;
+}
+
+.totopic {
+    margin-top: 20px;
+    font: 400 20px/20px Actor, sans-serif;
+    color: black;
+}
+
+.btnplace {
+    display: flex;
+    margin-top: 30px;
+}
+
+.new, .old {
+    flex: 0 0 242px;
+    font: 400 24px Actor, sans-serif;
+    color: white;
+    background-color: #2a3d71;
+    height: 50px;
+    border-radius: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btnplace button:hover {
+    background-color: #415793;
+}
+
+.imgandnotes {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mid {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-end;
+    padding: 48px;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.notebord {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 48px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: rgb(255 255 255);
+    border-radius: 50px;
+    animation: float 4s ease-in-out infinite; /* Apply animation */
+}
+
+.note1 {
+    box-sizing: border-box;
+    display: block;
+    width: 30px;
+    max-width: initial;
+    height: 33px;
+    border: none;
+    object-fit: cover;
+}
+
+.notestr1 {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 12px;
+    font: 300 18px / 18px Kalam, cursive;
+    color: black;
+    font-size: 14px;
+}
+
+.note2 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 45px;
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-top: 34px;
+    background: #2a3d71;
+    border-radius: 50px;
+    animation: float 4s ease-in-out infinite; /* Apply animation */
+}
+
+.notestr2 {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 300 16px / 16px Kalam, cursive;
+    color: #f7f7f7;
+    font-size: 12px;
+}
+
+.girl {
+    box-sizing: border-box;
+    display: block;
+    width: 322px;
+    max-width: initial;
+    height: 276px;
+    margin-left: -26px;
+    border: none;
+    object-fit: cover;
+}

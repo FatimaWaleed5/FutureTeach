@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.map-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-btn {
+    width: 142px;
+    padding: 10px;
+    background-color: #2a3d71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mapicon {
+    width: 28px;
+    height: 26px;
+}
+.mailicon {
+    width: 28px;
+    height: 26px;
+    margin: 3px;
+}
+.mes {
+    height: 150px;
+}
