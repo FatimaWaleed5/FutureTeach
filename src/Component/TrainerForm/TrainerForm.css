@@ -4,21 +4,20 @@
     align-items: center;
     padding: 20px;
     height: 100vh;
-    width: 100%;
-  /* لون خلفية خفيف للصفحة */
+  
 }
 
 .trainer-form-container {
     display: flex;
     flex-direction: column;
     max-width: 1500px;
-    height: 510px; /* العرض الأقصى للنموذج */
-    width: 200%; /* العرض الكامل للمحتوى المتوفر */
-    margin: 0 auto; /* توسيط النموذج */
-    background-color: rgba(225, 219, 219, 0.938); /* خلفية رصاصية شفافة */
-    padding: 20px; /* إضافة مسافة داخلية */
-    border-radius: 8px; /* زوايا دائرية */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* تأثير ظل */
+    height: 510px; 
+    width: 200%; 
+    margin: 0 auto;
+    background-color: rgba(225, 219, 219, 0.938); 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
     margin-left: 80px;
 }
 
@@ -27,7 +26,7 @@
 .trainer-transparent-box {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* مسافة بين قسم الصورة والنموذج */
+    gap: 20px; 
     width: 100%;
 }
 
@@ -35,17 +34,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%; /* عرض مناسب لقسم الصورة */
+    width: 30%; 
 }
 
 .trainer-image-section img {
-    max-width: 100%; /* جعل الصورة تأخذ كامل عرض الحاوية */
+    max-width: 100%; 
     height: auto;
     border-radius: 8px;
 }
 
 .trainer-form-section {
-    width: 70%; /* عرض مناسب لقسم النموذج */
+    width: 70%; 
 }
 
 .trainer-title {

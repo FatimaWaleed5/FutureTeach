@@ -1,128 +1,81 @@
-/* الخط الافتراضي */
-* {
-    font-family: auto;
-}
-
-/* تصميم الروابط */
-a {
-    color: #ffffff;
-    text-decoration: none;
+/* التصميم العام */
+.coursestypes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* صفين مع كرتين في كل صف */
+    gap: 30px; /* المسافة بين الكروت */
+    width: 90%; /* تقليل العرض العام ليتوسط الصفحة */
+    max-width: 1400px; /* الحد الأقصى لعرض الحاوية */
+    margin: auto; /* تمركز الحاوية */
 }
 
 /* تصميم الكروت */
 .twotypes {
     display: flex;
-    align-items: center;
-    background-color: #2a3d71; /* لون خلفية الكارت */
-    padding: 0px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: row;
-    overflow: hidden; /* للتأكد من أن التأثير لا يتجاوز حدود الكارت */
+    align-items: center;
+    background-color: #2a3d71;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 220px; /* زيادة ارتفاع الكارت */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* عكس الاتجاه للكروت المحددة */
 .twotypes.reverse {
     flex-direction: row-reverse;
 }
 
 /* تصميم الصور */
 .typesimages {
-    width: auto;
-    height: 200px;
-    border-radius: 10px;
+    width: 45%; /* حجم الصورة أكبر قليلاً */
+    height: 100%; /* جعل الصورة تملأ ارتفاع الكارت */
     object-fit: cover;
-    transform: translateX(0); /* وضع الصورة في مكانها الطبيعي */
-    opacity: 1;
-    transition: transform 1s ease, opacity 1s ease; /* تأثير انتقال بطيء للصورة */
 }
 
-/* تصميم النصوص داخل الكارت */
+/* النصوص داخل الكارت */
 .typestext-content {
-    flex-grow: 1;
-    padding-right: 10px;
-    padding-left: 20px;
-    transform: translateX(100%); /* مكان بداية النص خارج الكارت */
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease; /* تأثير انتقال بطيء للنص */
+    flex: 1;
+    padding: 30px; /* زيادة المساحة الداخلية */
+    color: #ffffff;
+    text-align: left;
 }
 
-/* تنسيق العناوين */
-h3 {
-    color: #f6f5f5bb;
+/* تصميم العناوين */
+.typestext-content h3 {
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 24px; /* زيادة حجم العناوين */
+    color: #ffffff;
 }
 
-/* تنسيق النصوص */
-p {
-    margin-bottom: 15px;
-    color: #908d8d;
+/* تصميم النصوص */
+.typestext-content p {
+    margin-bottom: 20px;
+    font-size: 16px; /* زيادة حجم النصوص */
+    color: #d1d1d1;
 }
 
 /* تصميم الزر */
 .viewbtn {
-    padding: 10px 20px;
-    background-color: #908d8d;
-    color: #fff;
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #2a3d71;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 80px;
-    height: 40px;
+    font-size: 16px; /* تكبير حجم النص داخل الزر */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .viewbtn:hover {
-    background-color: #000000;
+    background-color: #2a3d71;
+    color: #ffffff;
 }
 
-/* تأثير حركة النص عند التمرير */
-@keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* تأثير حركة الصورة عند التمرير */
-@keyframes slideOut {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-/* تطبيق التأثيرات عند التمرير على الكارت */
-.twotypes:hover .typestext-content {
-    animation: slideIn 1s forwards;
-}
-
-.twotypes:hover .typesimages {
-    animation: slideOut 1s forwards;
-}
-
-/* تصميم قسم الدورات */
-.undercourses {
-    margin-top: 200px;
-}
-
-.line {
-    border: none;
-    border-top: 2px solid #000000;
-    margin: 40px 0;
-    width: 70%;
-    align-self: center;
+/* التأثير عند التمرير */
+.twotypes:hover {
+    transform: scale(1.03); /* تكبير الكارت قليلاً عند التمرير */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Technicalcourses {
@@ -160,6 +113,7 @@ p {
 .fibertitle {
     color: black;
     margin-top: 20px;
+    padding-left: 2.5%;
 }
 
 .fiberdis {
@@ -169,13 +123,15 @@ p {
 .fiberdeal {
     display: flex;         
     align-items: center;    
-    gap: 15px;
+    gap: 20px;
+    padding-bottom: 2%;
 }
 
 .fibertrainer,
 .fiberprice {
     text-align: center;
     margin-left: 20px;
+    padding-top: 2%;
 }
 
 .fibertrainername,
@@ -199,8 +155,22 @@ p {
     cursor: pointer;
     width: 180px;
     margin-left: 60px;
+    margin-bottom: 100%;
 }
 
 .fiberbuy:hover {
     background-color: #b5802d;
+   
 }
+undercourses {
+    margin-top: 200px;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #000000;
+    margin: 40px 0;
+    width: 100%;
+    align-self: center;
+}
+

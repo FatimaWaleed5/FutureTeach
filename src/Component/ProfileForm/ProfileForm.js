@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ProfileForm.css';
 import axios from 'axios';
-import TrainerForm from '../TrainerForm/TrainerForm'; // استيراد نموذج المدرب
+import TrainerForm from '../TrainerForm/TrainerForm';
 
 const ProfileForm = ({ handleRoleChange, onSubmit }) => {
   const [firstName, setFirstName] = useState('');
@@ -17,8 +17,8 @@ const ProfileForm = ({ handleRoleChange, onSubmit }) => {
   const [role, setRole] = useState('');
   const [image, setImage] = useState(null);
   const [message, setMessage] = useState('');
-  const [password, setPassword] = useState(''); // إضافة حالة كلمة المرور
-  const [confirmPassword, setConfirmPassword] = useState(''); // إضافة حالة تأكيد كلمة المرور
+  const [password, setPassword] = useState(''); 
+  const [confirmPassword, setConfirmPassword] = useState(''); 
   const [showTrainerForm, setShowTrainerForm] = useState(false); 
   const [thankYouMessage, setThankYouMessage] = useState(false); 
 
@@ -30,7 +30,7 @@ const ProfileForm = ({ handleRoleChange, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      setMessage('Passwords do not match'); // رسالة عند عدم تطابق كلمتي المرور
+      setMessage('Passwords do not match'); 
       return;
     }
     if (role) {
@@ -90,9 +90,9 @@ const ProfileForm = ({ handleRoleChange, onSubmit }) => {
       });
   }, []);
 
-  // تحديث الخادم عند تغيير حقل معين
+  
   const handleFieldChange = (field, value) => {
-    // تحديث الحالة المحلية
+ 
     switch (field) {
       case 'gender': setGender(value); break;
       case 'city': setCity(value); break;
@@ -100,7 +100,7 @@ const ProfileForm = ({ handleRoleChange, onSubmit }) => {
       case 'language': setLanguage(value); break;
       default: break;
     }
-    // إرسال التحديث للخادم
+    
     axios.put('/api/profile', { [field]: value })
       .catch((error) => {
         console.error(`Error updating ${field}:`, error);

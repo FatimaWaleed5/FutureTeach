@@ -1,37 +1,66 @@
-.cards-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2A3D71;
-    padding: 50px;
+/* الحاوية الرئيسية */
+.carousel-container {
     width: 100%;
-    box-sizing: border-box;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 300px;
+    overflow: hidden; /* إخفاء الأجزاء الخارجة عن الشاشة */
+    background-color: #ffffff; /* الخلفية بيضاء */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* الشريط الذي يحتوي على الكروت */
+.carousel {
+    display: flex;
+    gap: 20px; /* مسافة بين الكروت */
+    animation: slide 20s linear infinite; /* حركة بطيئة للشريط */
+    will-change: transform;
+}
+
+/* تأثير الحركة */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-30%); /* الترجمة إلى المنتصف */
+    }
+    100% {
+        transform: translateX(0); /* العودة إلى البداية */
+    }
+}
+
+/* الكروت */
 .card {
-    background-color: #ffffff;
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
+    background-color: #2a3d71; /* لون الكارت نيلي */
+    flex: 0 0 auto; /* لا تسمح للكروت بالتمدد */
+    width: 250px; /* عرض الكارت */
+    height: 220px; /* ارتفاع الكارت */
     border-radius: 15px;
     text-align: center;
-    color: white;
+    color: #ffffff; /* لون النص أبيض */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-.card-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    transition: none; /* إزالة تأثير التكبير والظل */
 }
 
+/* تصميم الأيقونات */
+.card-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    filter: brightness(0) invert(1); /* تحويل الأيقونات للون الأبيض */
+}
+
+/* النصوص داخل الكارت */
 .card p {
     margin: 0;
     font-size: 18px;
+    font-weight: bold;
     font-family: Arial, sans-serif;
+    color: #ffffff; /* النص أبيض */
 }
